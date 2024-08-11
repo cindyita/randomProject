@@ -1,0 +1,43 @@
+<%- include('partials/header') %>
+
+<div class="main-content">
+    <h3>Acerca de RandomProject</h3>
+
+    <div>
+
+        <h4>Bienvenid@.</h4>
+        <p>Este proyecto se trata de un teléfono descompuesto de programadores. En cada turno un programador agrega un módulo al proyecto ¡No hay un objetivo claro, puedes agregar la funcionalidad que quieras!</p>
+        <h5>Reglas:</h5>
+        <ul>
+            <li>No agregues imagenes al proyecto, agrega links externos</li>
+            <li>No conectes a base de datos, usa tus apis externas</li>
+            <li>Puedes agregar dependencias ¡Pero no te pases!</li>
+            <li>Tienes un límite de tiempo de 3 días y después se pasa el turno</li>
+            <li>Puedes hacer cambios en local y después agregarlas cuándo sea tu turno</li>
+            <li>Mira el manual de cómo añadir proyectos antes de hacerlo</li>
+            <li>¡Todas las funcionalidades son de todos! No seas celos@ con tu código</li>
+            <li>NO agregues código que pueda ser peligroso para otros usuarios</li>
+            <li>¡Diviertete!</li>
+        </ul>
+        <hr>
+        <h5>Agregar un proyecto</h5>
+        <ol>
+            <li>Recuerda correr el comando npm install (Asegurate de tener instalado node.js)</li>
+            <li>Recuerda copiar el .env.example y renombrarlo como .env</li>
+            <li>Crea un archivo dentro de 'src/views/projects/' con el nombre de tu proyecto y con extensión .ejs (Ve el proyecto de prueba llamado quoteProject)</li>
+            <li>Escribe tu vista, puedes usar el quoteProject como template</li>
+            <li>Crea un controlador dentro de la ruta 'src/controllers/projects/' con el nombre de tu proyecto + Controller y con extensión .js</li>
+            <li>Ahí puedes obtener datos de apis o cualquier otra cosa. Usa el quoteProjectController como template</li>
+            <li>Puedes crear variables de entorno con las rutas de tu API, asegurate de agregarlo también a .env.example</li>
+            <li>Registra tu controlador dentro del archivo 'src/routes/routes.js'</li>
+            <li>Crea la importación dentro del comentario "IMPORTAR PROYECTOS" y crea la ruta dentro del comentario "RUTAS PROYECTOS", mira el quoteProject de ejemplo</li>
+            <li>Puedes agregar archivos css y js dentro de 'src/public/css/pages/' y 'src/public/js/pages/' e importarlo en la vista (Ve _quoteProject.ejs como ejemplo en el apartado ESTILOS y SCRIPTS) (Este paso es Opcional)</li>
+            <li>Por último e importante, registra tu proyecto dentro del archivo 'src/controllers/listProjects.js' dentro de 'listProjects' (Ver el objeto de ejemplo de quoteProject)</li>
+            <li>¡Y listo! Tu proyecto estará listo para usarse dentro de la ruta que estableciste</li>
+            <li>Ejecutalo en local con el comando: npm run dev</li>
+        </ol>
+
+    </div>
+</div>
+
+<%- include('partials/footer') %>

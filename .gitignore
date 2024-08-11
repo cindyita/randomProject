@@ -1,0 +1,17 @@
+/node_modules/
+logs/
+cache/
+temp/
+/sessions/
+npm-debug.log*
+yarn-error.log*
+coverage/
+dist/
+build/
+/.idea/
+/.vscode/
+.env
+.env.local
+.env.*.local
+*.bak
+*.tmp

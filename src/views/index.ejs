@@ -1,0 +1,23 @@
+<%- include('partials/header') %>
+<div class="main-content">
+
+    <div>
+        <h3>Últimos proyectos:</h3>
+        <div class="py-3 d-flex flex-column gap-3">
+            <% listProjects.forEach(project => { %>
+            <a href="<%= project.route %>" target="_blank">
+                <div class="card px-2">
+                    <div class="card-body">
+                        <h5 class="cardtitle">Proyecto: <%= project.title %></h5>
+                        <p><%= project.description %></p>
+                        <span class="text-secondary">Autor: <%= project.author %></span>
+                    </div>
+                </div>
+            </a>
+            <% }) %>
+        </div>
+        
+    </div>
+
+</div>
+<%- include('partials/footer') %>
